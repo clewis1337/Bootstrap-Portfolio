@@ -12,11 +12,34 @@ body {
 
 /* general */
 
+.yourNameLogo {
+  padding-left: 25px;
+  padding-right: 100px;
+  font-size: 38px;
+  font-weight: bold;
+  background-color: #4aaaa5;
+  color: white;
+}
+
 .container {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
   clear: both;
+}
+
+.craigFoot {
+  justify-content: center;
+  background-color: gray;
+  color: white;
+}
+
+.craigJumbo {
+  color: #4aaaa5;
+}
+
+.craigImage {
+  width: 200px;
 }
 
 h1,

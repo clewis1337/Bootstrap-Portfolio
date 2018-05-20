@@ -5,53 +5,64 @@
   <meta charset="UTF-8">
   <title>Contact | Your Name</title>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand yourNameLogo" href="#"> <p class="yourNameLogo">YOUR NAME</p></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+      </div>
+    </nav>
+  </div>
+  
 
   <div id="main-container" class="container">
     <section class="main-section">
       <h1>Contact</h1>
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
+      <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Smith">
+          </div>
+          <div class="form-group">
+              <label for="formGroupExampleInput">Email</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="johnsmith@gmail.com">
+            </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Message</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Insert Message Here" style="min-height: 150px;">
+          </div>
+          <input type="submit">
+        </form>
 
     </section>
 
   </div>
 
-  <footer>
-    <div class="container">
+  <div class="footer navbar-fixed-bottom">
+    <div class="container craigFoot">
       Copyright &copy; 
     </div>
-  </footer>
+  </div>
 </body>
 
 </html>
